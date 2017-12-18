@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dalonsoperez.simonsays.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="30dp"
+        tools:layout_editor_absoluteX="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/LvlText"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:text="Level:"
+                android:textColor="@android:color/black"
+                android:textColorLink="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:text="Score:"
+                android:textColor="@android:color/black"
+                android:textColorLink="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lvl"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3"
+                android:rowCount="3">
+
+                <Button
+                    android:id="@+id/pink"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:background="@drawable/botonrosa"
+                    android:text="pink"
+                    android:textColor="@color/pink" />
+
+                <Button
+                    android:id="@+id/brown"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:background="@drawable/botonmarron"
+                    android:text="brown"
+                    android:textColor="@color/brown" />
+
+                <Button
+                    android:id="@+id/green"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:background="@drawable/botonverde"
+                    android:text="green"
+                    android:textColor="@color/dark_green" />
+
+                <Button
+                    android:id="@+id/orange"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:background="@drawable/botonnaranja"
+                    android:text="orange"
+                    android:textColor="@color/orange" />
+
+                <Button
+                    android:id="@+id/newGame"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:backgroundTint="@color/yellow"
+                    android:background="@drawable/forma_botones"
+                    android:text="New Game" />
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
